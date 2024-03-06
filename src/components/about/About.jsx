@@ -1,30 +1,63 @@
+import { useRef } from "react";
 import "./about.scss";
+import { motion, useInView } from "framer-motion";
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transtion: {
+      duration: 2,
+    },
+  },
+};
 
 const About = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
+
   return (
-    <div className="about">
+    <motion.div
+      className="about"
+      variants={variants}
+      initial="initial"
+      ref={ref}
+      animate={isInView && "animate"}
+    >
       <div className="wrapper">
-        <div className="imageContainer">
-          <img src="/photo.jpg" alt="" />
-        </div>
-        <div className="textContainer">
-          <h2>
-            Hi,我是葉明荃 Mindy！
+        <motion.div className="textContainer" variants={variants}>
+          <motion.h2>
+            嗨，我是葉明荃 Mindy！
             <br />
-            是一名從電商領域跳到前端工程師的轉職者
-          </h2>
-          <p>目前使用的技術：HTML、CSS、JavaScripts、React</p>
-          <p>
-            歡迎來到我的個人空間！我是[您的名字]，一位從電商行銷轉職成為前端工程師的熱情探索者。我的職業旅程是一條充滿學習和成長的道路，我在這裡與您分享我轉變的故事和我所創造的作品。
-            在進入前端開發的世界之前，我在電商行銷領域擁有豐富的經驗。這段經歷教會我市場趨勢的敏銳洞察力，以及如何在快速變化的環境中保持創新和競爭力。然而，我一直對技術抱有深厚的興趣，特別是對於如何通過技術來改善用戶體驗這一問題。這驅使我開始了我的轉職之旅。
-            透過自學和參加編程課程，我逐漸建立起了前端開發的堅實基礎。我學習了HTML、CSS、JavaScript等核心技術，並且深入研究了React和Vue.js等現代前端框架。轉職過程不僅是技術上的挑戰，也是一次對自我能力和毅力的考驗。我很自豪能夠說，這段經歷讓我變得更加堅韌不拔，也更加熱愛我所做的工作。
-            在我的網站上，您將找到我最近的項目展示，這些項目不僅反映了我的技術技能，也展示了我將創意和用戶體驗融入開發過程的能力。每一行代碼都是我對美好、高效和創新用戶體驗的追求。
-            轉職前端開發不僅僅是職業生涯的轉變，更是我對探索未知、持續學習和創造影響的熱情的延續。我相信，無論是在行銷還是在技術開發領域，持續學習和適應變化是成功的關鍵。
-            我期待著與您分享我的旅程和成果。請隨時通過[您的聯絡方式]與我聯繫，無論是關於合作機會、項目想法，或者僅僅是想說聲嗨。謝謝您的來訪，期待我們的交流！
-          </p>
-        </div>
+            一名從電商領域跳到前端工程師的轉職者
+          </motion.h2>
+          <motion.p>
+            *目前主要使用的技術：HTML、CSS、JavaScripts、React
+          </motion.p>
+          <motion.p>
+            在進入前端開發的世界之前，我在電商行銷領域擁有 1-2
+            年的工作經驗。這段經歷讓我擁有很多和網站接觸的機會，也讓我培養了對介面的美感及使用者體驗的敏銳度。
+            <br />
+            <br />
+            同時也因為接觸久了，開始希望能更精進自己，我開始自己學習html，於是開啟了我的前端之旅！最後因為學出了興趣和熱情，不僅透過自學，還參加了Alpha
+            Camp的課程讓自己的基礎更加紮實。
+            <br />
+            <br />
+            轉職過程不僅是技術上的挑戰，也是一次對自我能力和毅力的考驗。但透過這些考驗，也更加讓我確認對這個領域的熱情，以及愛上每次解決問題的成就感。
+            <br />
+            <br />
+          </motion.p>
+        </motion.div>
+        <motion.div className="imageContainer" variants={variants}>
+          <motion.img src="/photo.jpg" alt="" />
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
