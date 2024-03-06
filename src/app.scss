@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  background-color: #0c0c1d;
+  background: linear-gradient(45deg, #04040a, #0c2d3e, #143e4d, #7ec1c6);
   color: lightgray;
+  overflow-x: hidden;
 }
 
 a {

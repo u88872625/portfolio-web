@@ -1,0 +1,71 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  position: relative;
+  //   background-image: url("../../../public/bubble.png");
+  //   background-size: cover;
+  //   background-position: center;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    .textContainer {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      z-index: 999;
+
+      h2 {
+        font-size: 30px;
+        color: #143e4d;
+        letter-spacing: 2px;
+      }
+
+      h1 {
+        font-size: 64px;
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 12px;
+
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          font-weight: 300;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .slidingImage {
+    position: absolute;
+    height: 80vh;
+    bottom: -150px;
+    opacity: 0.5;
+  }
+
+  .imageContainer {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    opacity: 0.8;
+  }
+}
