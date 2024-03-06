@@ -1,0 +1,23 @@
+.about {
+  height: 100%;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin: auto;
+
+    .imageContainer {
+      img {
+        width: 300px;
+      }
+    }
+
+    .textContainer {
+      width: 40%;
+    }
+  }
+}

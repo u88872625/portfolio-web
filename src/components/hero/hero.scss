@@ -1,10 +1,8 @@
 .hero {
   height: calc(100vh - 100px);
+  background: linear-gradient(45deg, #020a0c, #1a3c68, #84c7ca);
   overflow: hidden;
   position: relative;
-  //   background-image: url("../../../public/bubble.png");
-  //   background-size: cover;
-  //   background-position: center;
 
   .wrapper {
     max-width: 1366px;
