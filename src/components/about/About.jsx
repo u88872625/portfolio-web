@@ -27,7 +27,7 @@ const About = () => {
       variants={variants}
       initial="initial"
       ref={ref}
-      animate={isInView && "animate"}
+      animate={"animate"}
     >
       <div className="wrapper">
         <motion.div className="imageContainer" variants={variants}>
