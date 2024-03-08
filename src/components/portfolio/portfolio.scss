@@ -13,8 +13,9 @@
     font-size: 36px;
 
     @include mobile {
-      padding-top: calc(100vh - 100px);
-      font-size: 24px;
+      // padding-top: calc(100vh - 100px);
+      // font-size: 24px;
+      display: none;
     }
 
     .progressBar {
@@ -42,7 +43,7 @@
 
       @include mobile {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
       }
 
       .imageContainer {
