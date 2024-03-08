@@ -30,6 +30,9 @@ const About = () => {
       animate={isInView && "animate"}
     >
       <div className="wrapper">
+        <motion.div className="imageContainer" variants={variants}>
+          <motion.img src="/photo.jpg" alt="" />
+        </motion.div>
         <motion.div className="textContainer" variants={variants}>
           <motion.h2>
             嗨，我是葉明荃 Mindy！
@@ -52,9 +55,6 @@ const About = () => {
             <br />
             <br />
           </motion.p>
-        </motion.div>
-        <motion.div className="imageContainer" variants={variants}>
-          <motion.img src="/photo.jpg" alt="" />
         </motion.div>
       </div>
     </motion.div>

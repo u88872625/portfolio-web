@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .hero {
   height: calc(100vh - 100px);
   background: linear-gradient(45deg, #020a0c, #1a3c68, #84c7ca);
@@ -18,18 +20,30 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-      z-index: 999;
+      z-index: 99;
+
+      @include mobile {
+        text-align: center;
+      }
 
       h2 {
         font-size: 30px;
-        color: #143e4d;
+        color: #9f9f9f;
         letter-spacing: 2px;
+
+        @include mobile {
+          font-size: 24px;
+        }
       }
 
       h1 {
         font-size: 64px;
         color: white;
         letter-spacing: 2px;
+
+        @include mobile {
+          font-size: 36px;
+        }
       }
 
       .buttons {
@@ -64,6 +78,20 @@
     position: absolute;
     width: 100%;
     top: 0;
-    opacity: 0.8;
+    opacity: 0.7;
+
+    @include mobile {
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    img {
+      width: 100%;
+
+      @include mobile {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 }

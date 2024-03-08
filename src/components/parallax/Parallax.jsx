@@ -15,6 +15,7 @@ const Parallax = ({ type }) => {
   return (
     <div
       className="parallax"
+      ref={ref}
       style={{
         background:
           type === "about"

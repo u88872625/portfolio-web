@@ -1,5 +1,8 @@
+@import "../../app.scss";
+
 .about {
   background: linear-gradient(180deg, #0f1b33, #050c63);
+  width: 100%;
   height: 100%;
 
   .wrapper {
@@ -11,17 +14,46 @@
     gap: 64px;
     margin: auto;
 
+    @include mobile {
+      flex-direction: column;
+      gap: 36px;
+    }
+
     .imageContainer {
+      flex: 1;
+      height: 50%;
+
+      @include mobile {
+        width: 100%;
+        max-height: 300px;
+      }
+
       img {
-        width: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
     .textContainer {
-      width: 40%;
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      h2 {
+        @include mobile {
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+
+      p {
+        @include mobile {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
     }
   }
 }
