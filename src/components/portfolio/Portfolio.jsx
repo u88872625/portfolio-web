@@ -7,6 +7,7 @@ const items = [
     id: 1,
     title: "國和汽車",
     img: "/國和汽車.png",
+    url: "https://guo-huo-web.vercel.app/",
     description:
       "使用到的技術有\nReact,\nbootstrap\n及\nfirebase。\n 透過官方網站建立品牌形象，除了前台基本的內容之外，因應業主需求建立後台，讓授權的使用者擁有新增、刪除及修改文章和\nBanner\n的功能，同時也建立讓使用者利用\nGoogle\n帳號登入的功能，增加便利性。",
   },
@@ -14,6 +15,7 @@ const items = [
     id: 2,
     title: "MBTI Talk",
     img: "/mbtiTalk.png",
+    url: "https://u88872625.github.io/mbti-talk/",
     description:
       "使用到的技術主要有\nReact\n及\nSocket.io\n。利用\nMBTI\n16人格類型建立一個配對聊天網站，除了可以自己選擇\nMBTI\n類型外，也可以透過心理測驗得到自己的\nMBTI\n進入聊天室。",
   },
@@ -21,6 +23,7 @@ const items = [
     id: 3,
     title: "Meal Planner",
     img: "/mealplanner.png",
+    url: "https://github.com/u88872625/meal-planner",
     description:
       "利用 react native 及 firebase 建立的三餐規劃 App。作品原型參考自 Youtube 上的 Sujan Anand，除了原本可以規劃自己的三餐之外，同時新增了一週食材統計和內建食譜，讓使用者方便採買及規劃。",
   },
@@ -43,7 +46,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <button>See Demo</button>
+            <a href={item.url}>
+              <button>See Demo</button>
+            </a>
           </motion.div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
           MING CHUAN YEH
         </motion.span>
 
-        <a href="#">
+        <a href="https://github.com/u88872625">
           <img src="/github-mark-white.svg" alt="github.svg" />
         </a>
       </div>
