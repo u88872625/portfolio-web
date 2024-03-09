@@ -5,24 +5,24 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "react Commerce",
-    img: "https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "國和汽車",
+    img: "/國和汽車.png",
     description:
-      "A good portfolio website combinesr role, personality, and valuerate their technical skills with micro-interactions, like Enrico Deiana, or write their principles as Tamara Sredojevic does.In addition to the design, using your expertise, like Todd Clarke’s copywriting skills, is a great way to show prospective employers and clients what you have to offer. We hope you’ve found design inspiration from the 15+ examples in this article and generated ideas to apply to your online portfolio.",
+      "使用到的技術有\nReact,\nbootstrap\n及\nfirebase。\n 透過官方網站建立品牌形象，除了前台基本的內容之外，因應業主需求建立後台，讓授權的使用者擁有新增、刪除及修改文章和\nBanner\n的功能，同時也建立讓使用者利用\nGoogle\n帳號登入的功能，增加便利性。",
   },
   {
     id: 2,
-    title: "react Commerce",
-    img: "https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "MBTI Talk",
+    img: "/mbtiTalk.png",
     description:
-      "A good portfolio website combines the right desemonstrate their technical skills with micro-interactions, like Enrico Deiana, or write their principles as Tamara Sredojevic does.In addition to the design, using your expertise, like Todd Clarke’s copywriting skills, is a great way to show prospective employers and clients what you have to offer. We hope you’ve found design inspiration from the 15+ examples in this article and generated ideas to apply to your online portfolio.",
+      "使用到的技術主要有\nReact\n及\nSocket.io\n。利用\nMBTI\n16人格類型建立一個配對聊天網站，除了可以自己選擇\nMBTI\n類型外，也可以透過心理測驗得到自己的\nMBTI\n進入聊天室。",
   },
   {
     id: 3,
-    title: "react Commerce",
-    img: "https://images.pexels.com/photos/792416/pexels-photo-792416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Meal Planner",
+    img: "/mealplanner.png",
     description:
-      "A good portfolio website combines the right designticle and generated ideas to apply to your online portfolio.",
+      "利用 react native 及 firebase 建立的三餐規劃 App。作品原型參考自 Youtube 上的 Sujan Anand，除了原本可以規劃自己的三餐之外，同時新增了一週食材統計和內建食譜，讓使用者方便採買及規劃。",
   },
 ];
 

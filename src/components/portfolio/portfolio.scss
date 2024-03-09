@@ -31,6 +31,11 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding-top: 50px;
+
+    @include mobile {
+      padding-top: 0px;
+    }
 
     .wrapper {
       height: 100%;
@@ -80,7 +85,7 @@
         }
 
         h2 {
-          font-size: 72px;
+          font-size: 64px;
 
           @include mobile {
             font-size: 36px;
