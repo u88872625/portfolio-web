@@ -17,7 +17,7 @@ const items = [
     img: "/mbtiTalk.png",
     url: "https://u88872625.github.io/mbti-talk/",
     description:
-      "使用到的技術主要有\nReact\n及\nSocket.io\n。利用\nMBTI\n16人格類型建立一個配對聊天網站，除了可以自己選擇\nMBTI\n類型外，也可以透過心理測驗得到自己的\nMBTI\n進入聊天室。",
+      "使用到的技術主要有\nReact\n及\nSocket.io\n。利用\nMBTI\n16人格類型建立一個配對聊天網站，除了可以自己選擇\nMBTI\n類型外，也可以透過心理測驗確認自己的\nMBTI\n進入聊天室。",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const items = [
     img: "/mealplanner.png",
     url: "https://github.com/u88872625/meal-planner",
     description:
-      "利用 react native 及 firebase 建立的三餐規劃 App。作品原型參考自 Youtube 上的 Sujan Anand，除了原本可以規劃自己的三餐之外，同時新增了一週食材統計和內建食譜，讓使用者方便採買及規劃。",
+      "利用\nreact\nnative\n及\nfirebase\n建立的三餐規劃\nApp。作品原型參考自\nYoutube\n上的\nSujan\nAnand，除了原本可以規劃自己的三餐之外，同時新增了一週食材統計和內建食譜，讓使用者方便採買及規劃。",
   },
 ];
 
@@ -46,7 +46,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.description}</p>
-            <a href={item.url}>
+            <a href={item.url} target="blank">
               <button>See Demo</button>
             </a>
           </motion.div>

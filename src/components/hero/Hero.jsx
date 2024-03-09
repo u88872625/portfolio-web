@@ -59,8 +59,12 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>Front-end Developer</motion.h1>
           <motion.h2 variants={textVariants}>葉明荃 Mindy</motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>最新作品</motion.button>
-            <motion.button variants={textVariants}>聯絡我</motion.button>
+            <a href="#Portfolio">
+              <motion.button variants={textVariants}>最新作品</motion.button>
+            </a>
+            <a href="#聯絡方式">
+              <motion.button variants={textVariants}>聯絡我</motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}

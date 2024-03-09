@@ -34,11 +34,7 @@ const About = () => {
           <motion.img src="/photo.jpg" alt="" />
         </motion.div>
         <motion.div className="textContainer" variants={variants}>
-          <motion.h2>
-            嗨，我是葉明荃 Mindy！
-            <br />
-            一名從電商領域跳到前端工程師的轉職者
-          </motion.h2>
+          <motion.h2>嗨，我是葉明荃 Mindy！</motion.h2>
           <motion.p>
             *目前主要使用的技術：HTML、CSS、JavaScripts、React
           </motion.p>
