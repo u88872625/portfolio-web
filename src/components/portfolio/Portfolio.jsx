@@ -9,7 +9,7 @@ const items = [
     img: "/國和汽車.png",
     url: "https://guo-huo-web.vercel.app/",
     description:
-      "使用到的技術有\nReact,\nbootstrap\n及\nfirebase。\n 透過官方網站建立品牌形象，除了前台基本的內容之外，因應業主需求建立後台，讓授權的使用者擁有新增、刪除及修改文章和\nBanner\n的功能，同時也建立讓使用者利用\nGoogle\n帳號登入的功能，增加便利性。",
+      "使用到的技術有\nReact、\nbootstrap\n及\nfirebase。\n 透過官方網站建立品牌形象，除了前台基本的內容之外，因應業主需求建立後台，讓授權的使用者擁有新增、刪除及修改文章和\nBanner\n的功能，同時也建立讓使用者利用\nGoogle\n帳號登入的功能，增加便利性。",
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.description}</p>
             <a href={item.url} target="blank">
-              <button>See Demo</button>
+              <button>查看更多</button>
             </a>
           </motion.div>
         </div>
